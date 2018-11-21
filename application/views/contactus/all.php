@@ -9,7 +9,7 @@
               <h4>
                 Contact Form
                 <!-- <span style="float: right;">
-                  <a class="btn btn-primary" style="margin:-5px;" href="<?php echo base_url() ?>contactus/add">
+                  <a class="btn btn-primary" style="margin:-5px;" href="<?php echo base_url()._INDEX ?>contactus/add">
                     Add new
                   </a>
                 </span> -->
@@ -32,9 +32,9 @@
                   <td><?php echo $row->email ?></td>                                    
                   <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
                   <td>
-                    <a href="<?php echo base_url() ?>contactus/view/<?php echo $row->id ?>"><i class="glyphicon glyphicon-eye-open"></i></a>
+                    <a href="<?php echo base_url()._INDEX ?>contactus/view/<?php echo $row->id ?>"><i class="glyphicon glyphicon-eye-open"></i></a>
                          &nbsp;&nbsp;&nbsp;  
-                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>contactus/delete/<?php echo $row->id ?>"><i class="glyphicon glyphicon-remove"></i></a>
+                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>contactus/delete/<?php echo $row->id ?>"><i class="glyphicon glyphicon-remove"></i></a>
                   </td>
                   
                 </tr>               

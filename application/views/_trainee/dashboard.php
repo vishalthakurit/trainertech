@@ -28,7 +28,7 @@
                   <td><?php echo date('h:i A', strtotime($row->time)); ?></td>                                    
                   <td><?php if($row->status == 0){ echo 'Pending'; } elseif($row->status == 2) { echo 'Not Done'; } else { echo 'Completed'; }  ?></td>
                   <td>
-                    <a href="<?php echo base_url() ?>workout/view/<?php echo $row->id ?>"><i class="glyphicon glyphicon-eye-open"></i></a>
+                    <a href="<?php echo base_url()._INDEX?>workout/view/<?php echo $row->id ?>"><i class="glyphicon glyphicon-eye-open"></i></a>
                   </td>
                   
                 </tr>               

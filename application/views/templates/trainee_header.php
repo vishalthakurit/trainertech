@@ -118,12 +118,12 @@
 
                 <ul class="header-menu">
                     <li>
-                        <a href="<?php echo base_url(); ?>trainee/changePassword">
+                        <a href="<?php echo base_url()._INDEX; ?>trainee/changePassword">
                             <i class="fa fa-cog"></i>
                             Change Password
                         </a>
                     </li>                  
-                    <li><a href="<?php echo base_url() ?>trainee/logout"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                    <li><a href="<?php echo base_url()._INDEX ?>trainee/logout"><i class="fa fa-sign-out"></i>Sign Out</a></li>
                 </ul>
 
             </header>

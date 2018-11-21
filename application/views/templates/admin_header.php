@@ -130,9 +130,9 @@
         <a href="#menu" class="menu"></a>
 
         <ul class="header-menu">
-          <li><a href="<?php echo base_url(); ?>settings/changePassword"><i class="fa fa-cog"></i>Settings</a></li>
-          <li><a href="<?php echo base_url(); ?>profile/admin"><i class="fa fa-user"></i>Profile</a></li>
-          <li><a href="<?php echo base_url() ?>admin/logout"><i class="fa fa-power-off"></i>Sign Out</a></li>
+          <li><a href="<?php echo base_url()._INDEX; ?>settings/changePassword"><i class="fa fa-cog"></i>Settings</a></li>
+          <li><a href="<?php echo base_url()._INDEX; ?>profile/admin"><i class="fa fa-user"></i>Profile</a></li>
+          <li><a href="<?php echo base_url()._INDEX;?>admin/logout"><i class="fa fa-power-off"></i>Sign Out</a></li>
         </ul>
 
       </header>
@@ -141,17 +141,17 @@
 
         <div class="left-nav">
           <ul>
-            <!-- <li><a href="<?php echo base_url() ?>exercise/all"><i class="fa fa-plus"></i>Manage Exercise</a></li> -->
-            <li><a href="<?php echo base_url() ?>gallery/all"><i class="fa fa-image"></i>Image Gallery</a></li>
-            <li><a href="<?php echo base_url() ?>plans/all"><i class="fa fa-tasks"></i>Manage Plans</a></li>
-            <li><a href="<?php echo base_url() ?>manager/all"><i class="fa fa-user"></i>Manage Managers</a></li>
-            <li><a href="<?php echo base_url() ?>trainer/all"><i class="fa fa-user"></i>Manage Trainers</a></li>
-            <li><a href="<?php echo base_url() ?>trainee/all"><i class="fa fa-user"></i>Manage Trainee</a></li>
-            <li><a href="<?php echo base_url() ?>admin/support"><i class="fa fa-support"></i>Support</a></li>
-            <li><a href="<?php echo base_url() ?>admin/social_links"><i class="fa fa-list"></i> Social Links</a></li>
+            <!-- <li><a href="<?php echo base_url()._INDEX ?>exercise/all"><i class="fa fa-plus"></i>Manage Exercise</a></li> -->
+            <li><a href="<?php echo base_url()._INDEX ?>gallery/all"><i class="fa fa-image"></i>Image Gallery</a></li>
+            <li><a href="<?php echo base_url()._INDEX ?>plans/all"><i class="fa fa-tasks"></i>Manage Plans</a></li>
+            <li><a href="<?php echo base_url()._INDEX ?>manager/all"><i class="fa fa-user"></i>Manage Managers</a></li>
+            <li><a href="<?php echo base_url()._INDEX ?>trainer/all"><i class="fa fa-user"></i>Manage Trainers</a></li>
+            <li><a href="<?php echo base_url()._INDEX ?>trainee/all"><i class="fa fa-user"></i>Manage Trainee</a></li>
+            <li><a href="<?php echo base_url()._INDEX ?>admin/support"><i class="fa fa-support"></i>Support</a></li>
+            <li><a href="<?php echo base_url()._INDEX ?>admin/social_links"><i class="fa fa-list"></i> Social Links</a></li>
             <li><a style="display:none;"  href="<?php echo base_url() ?>app_slider/all"><i class="fa fa-image"></i> App Slider</a></li>
-			<li><a href="<?php echo base_url() ?>admin/create_admin"><i class="fa fa-users"></i>Create Admin</a></li>
-            <li><a href="<?php echo base_url() ?>page/all"><i class="fa fa-list"></i>Pages</a></li>
+			<li><a href="<?php echo base_url()._INDEX ?>admin/create_admin"><i class="fa fa-users"></i>Create Admin</a></li>
+            <li><a href="<?php echo base_url()._INDEX ?>page/all"><i class="fa fa-list"></i>Pages</a></li>
             <?php /* ?>
             <li class="multi-item">
               <a href="javascript:;" class="dcjq-parent"><i class="fa fa-user"></i>Add Trainee</a>

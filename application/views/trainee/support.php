@@ -3,7 +3,7 @@
               <h4>
                 Supports
                 <span style="float: right;">
-                  <a class="btn btn-blue" href="<?php echo base_url() ?>trainee/add_query">
+                  <a class="btn btn-blue" href="<?php echo base_url()._INDEX ?>trainee/add_query">
                     Add new
                   </a>
                 </span>
@@ -24,7 +24,7 @@
                   <!-- <td><?php if($row->status == 1) echo 'Open'; elseif($row->status == 2) echo "Closed"; ?></td>                                  -->
                   <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
                   <td>
-                    <a href="<?php echo base_url() ?>trainee/reply/<?php echo $row->token2 ?>">
+                    <a href="<?php echo base_url()._INDEX ?>trainee/reply/<?php echo $row->token2 ?>">
                       <i class="glyphicon glyphicon-comment"></i>
                       <?php $replies = count_replies($row->token2,'trainee_read'); ?>
                       <?php if ($replies): ?>

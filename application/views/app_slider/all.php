@@ -4,7 +4,7 @@
               <h4>
                 Manage Slider
                 <span style="float: right;">
-                  <a class="btn btn-blue" href="<?php echo base_url() ?>app_slider/add">
+                  <a class="btn btn-blue" href="<?php echo base_url()._INDEX ?>app_slider/add">
                     Add new
                   </a>
                   <br>
@@ -32,9 +32,9 @@
                     <td><?php echo $row->order; ?></td>
                     <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
                     <td>
-                      <a href="<?php echo base_url() ?>app_slider/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
+                      <a href="<?php echo base_url()._INDEX ?>app_slider/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
                            &nbsp;&nbsp;&nbsp;  
-                           <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>app_slider/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
+                           <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>app_slider/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
                     </td>
                     
                   </tr>               

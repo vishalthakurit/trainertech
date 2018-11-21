@@ -3,7 +3,7 @@
               <h4>
                 Supports
                 <span style="float: right;">
-                  <a class="btn btn-blue"href="<?php echo base_url() ?>support/add">
+                  <a class="btn btn-blue"href="<?php echo base_url()._INDEX ?>support/add">
                     Add new
                   </a>
                 </span>
@@ -24,7 +24,7 @@
                   <!-- <td><?php if($row->status == 1) echo 'Open'; elseif($row->status == 2) echo "Closed"; ?></td>                                  -->
                   <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
                   <td>
-                    <a href="<?php echo base_url() ?>support/reply/<?php echo $row->token2 ?>">
+                    <a href="<?php echo base_url()._INDEX ?>support/reply/<?php echo $row->token2 ?>">
                      <i class="glyphicon glyphicon-comment"></i>
                       <?php $replies = count_replies($row->token2,'trainer_read'); ?>
                       <?php if ($replies): ?>
@@ -34,7 +34,7 @@
                       <?php endif ?>
                     </a>
                          &nbsp;&nbsp;&nbsp;  
-<!--                          <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>support/delete/<?php echo $row->token2 ?>"><i class="glyphicon glyphicon-remove"></i></a>
+<!--                          <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>support/delete/<?php echo $row->token2 ?>"><i class="glyphicon glyphicon-remove"></i></a>
  -->                  </td>
                   
                 </tr>               

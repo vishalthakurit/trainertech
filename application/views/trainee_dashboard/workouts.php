@@ -30,7 +30,7 @@
 				?>
 			</td>
 			<td>
-				<a href="<?php echo base_url() ?>trainee/view_workout/<?php echo $row->id ?>"><i class="glyphicon glyphicon-eye-open"></i></a>
+				<a href="<?php echo base_url()._INDEX ?>trainee/view_workout/<?php echo $row->id ?>"><i class="glyphicon glyphicon-eye-open"></i></a>
 			</td>
 			<td>
 				<a href="javascript:void(0);" class="print_btn_temp" title="Print Button Loading"><i class="glyphicon glyphicon-print"></i></a>

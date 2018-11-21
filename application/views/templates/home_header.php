@@ -46,37 +46,37 @@
 				<div id="dl-menu" class="dl-menuwrapper">
 					<button class="dl-trigger">Open Menu</button>
 					<ul class="dl-menu">
-						<li><a href="<?php echo base_url() ?>about">ABOUT</a></li>
-						<li><a href="<?php echo base_url() ?>services">SERVICES</a></li>
-						<li><a href="<?php echo base_url() ?>how_turnkey_works">HOW TURNKEY WORKS</a></li>
-						<li><a href="<?php echo base_url() ?>listings">LISTINGS</a></li>
-						<li><a href="<?php echo base_url() ?>invest">INVEST</a></li>
-						<li><a href="<?php echo base_url() ?>news">NEWS</a></li>
-						<li><a href="<?php echo base_url() ?>contactus">CONTACT US</a></li>
+						<li><a href="<?php echo base_url()._INDEX ?>about">ABOUT</a></li>
+						<li><a href="<?php echo base_url()._INDEX ?>services">SERVICES</a></li>
+						<li><a href="<?php echo base_url()._INDEX ?>how_turnkey_works">HOW TURNKEY WORKS</a></li>
+						<li><a href="<?php echo base_url()._INDEX ?>listings">LISTINGS</a></li>
+						<li><a href="<?php echo base_url()._INDEX ?>invest">INVEST</a></li>
+						<li><a href="<?php echo base_url()._INDEX ?>news">NEWS</a></li>
+						<li><a href="<?php echo base_url()._INDEX ?>contactus">CONTACT US</a></li>
 					</ul>
 				</div>
-				<a href="<?php echo base_url() ?>" class="logo"><img src="<?php echo base_url() ?>assets/theme/img/logo.png"></a>
+				<a href="<?php echo base_url()._INDEX ?>" class="logo"><img src="<?php echo base_url() ?>assets/theme/img/logo.png"></a>
 				<div id="search">
 					<form class="pull-right">                        
 						<label id="open-search" class="icon-search" ></label>                       
 					</form>                    
 				</div>                
 				<ul id="main-nav">
-					<li <?php if($menuactive == 'about') echo "class='current'"; ?> ><a href="<?php echo base_url() ?>about">ABOUT</a></li>
-					<li <?php if($menuactive == 'services') echo "class='current'"; ?> ><a href="<?php echo base_url() ?>services">SERVICES</a></li>
-					<li <?php if($menuactive == 'how_turnkey_works') echo "class='current'"; ?> ><a href="<?php echo base_url() ?>how_turnkey_works">HOW TURNKEY WORKS</a></li>
+					<li <?php if($menuactive == 'about') echo "class='current'"; ?> ><a href="<?php echo base_url()._INDEX ?>about">ABOUT</a></li>
+					<li <?php if($menuactive == 'services') echo "class='current'"; ?> ><a href="<?php echo base_url()._INDEX ?>services">SERVICES</a></li>
+					<li <?php if($menuactive == 'how_turnkey_works') echo "class='current'"; ?> ><a href="<?php echo base_url()._INDEX ?>how_turnkey_works">HOW TURNKEY WORKS</a></li>
 					
 					<li <?php if($menuactive == 'listings') echo "class='current'"; ?> >
 						<a id="listing" href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle" >LISTINGS</a>
 						<ul id="listing_option" class="dropdown-menu" role="menu">
-							<li><a href="<?php echo base_url() ?>listings/active">Active Listings</a></li>
-							<li><a href="<?php echo base_url() ?>listings/rented">Rented Listings</a></li>
+							<li><a href="<?php echo base_url()._INDEX ?>listings/active">Active Listings</a></li>
+							<li><a href="<?php echo base_url()._INDEX ?>listings/rented">Rented Listings</a></li>
 						</ul>
 					</li>
 					
-					<li <?php if($menuactive == 'invest') echo "class='current'"; ?> ><a href="<?php echo base_url() ?>invest">INVEST</a></li>
-					<li <?php if($menuactive == 'news') echo "class='current'"; ?> ><a href="<?php echo base_url() ?>news">NEWS</a></li>
-					<li <?php if($menuactive == 'contactus') echo "class='current'"; ?> ><a href="<?php echo base_url() ?>contactus">CONTACT US</a></li>
+					<li <?php if($menuactive == 'invest') echo "class='current'"; ?> ><a href="<?php echo base_url()._INDEX ?>invest">INVEST</a></li>
+					<li <?php if($menuactive == 'news') echo "class='current'"; ?> ><a href="<?php echo base_url()._INDEX ?>news">NEWS</a></li>
+					<li <?php if($menuactive == 'contactus') echo "class='current'"; ?> ><a href="<?php echo base_url()._INDEX ?>contactus">CONTACT US</a></li>
 				</ul>
 			</div>
 		</header>

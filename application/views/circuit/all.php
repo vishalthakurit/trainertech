@@ -2,7 +2,7 @@
 <h4>
   System Circuits
   <span style="float: right;">
-    <a class="btn btn-blue" href="<?php echo base_url() ?>circuit/add">
+    <a class="btn btn-blue" href="<?php echo base_url()._INDEX ?>circuit/add">
       Add new
     </a>
   </span>
@@ -24,9 +24,9 @@
                   <td><?php echo word_limiter($row->description,5); ?></td>                                    
                   <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
                   <td>
-                    <a href="<?php echo base_url() ?>circuit/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <a href="<?php echo base_url()._INDEX ?>circuit/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
                          &nbsp;&nbsp;&nbsp;  
-                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>circuit/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
+                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>circuit/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
                   </td>
                   
                 </tr>               

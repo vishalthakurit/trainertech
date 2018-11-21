@@ -45,7 +45,7 @@
 				<input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
 				<br><input type="password" name="password" class="form-control" placeholder="Password" required>
 				<button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-				<br><a href="<?php echo base_url() ?>forget_password/admin" style="float: right;">Forget Password ?</a>
+				<br><a href="<?php echo base_url()._INDEX ?>forget_password/admin" style="float: right;">Forget Password ?</a>
 			</form>
 
 		</div>

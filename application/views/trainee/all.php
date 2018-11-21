@@ -3,7 +3,7 @@
             <header>
               <span>Manage Trainees</span>
               <form role="form">            
-                   <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url() ?>trainee/add">
+                   <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url()._INDEX ?>trainee/add">
                         Add new
                       </a>
               </form>
@@ -25,9 +25,9 @@
                                                      
                   <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
                   <td>
-                    <a href="<?php echo base_url() ?>trainee/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <a href="<?php echo base_url()._INDEX ?>trainee/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
                          &nbsp;&nbsp;&nbsp;  
-                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>trainee/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
+                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>trainee/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
                   </td>
                   
                 </tr>               

@@ -3,7 +3,7 @@
         <header>
           <span>Manage Plans</span>
           <form role="form">            
-              <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url() ?>plans/add">
+              <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url()._INDEX ?>plans/add">
                     Add new
                   </a>
           </form>
@@ -27,9 +27,9 @@
                                            
         <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
         <td>
-          <a href="<?php echo base_url() ?>plans/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
+          <a href="<?php echo base_url()._INDEX?>plans/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
                &nbsp;&nbsp;&nbsp;  
-               <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>plans/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
+               <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>plans/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
         </td>
         
       </tr>               

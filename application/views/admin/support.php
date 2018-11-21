@@ -22,7 +22,7 @@
                   <td>
                     <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>admin/delete_support/<?php echo $row->token2 ?>"><i class="glyphicon glyphicon-remove"></i></a>
                          &nbsp;&nbsp;&nbsp;  
-                    <a href="<?php echo base_url() ?>admin/reply/<?php echo $row->token2 ?>">
+                    <a href="<?php echo base_url()._INDEX ?>admin/reply/<?php echo $row->token2 ?>">
                      <i class="glyphicon glyphicon-comment"></i>
                       <?php $replies = count_replies($row->token2,'admin_read'); ?>
                       <?php if ($replies): ?>

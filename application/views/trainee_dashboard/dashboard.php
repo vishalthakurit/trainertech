@@ -147,7 +147,7 @@
     function change_sets(setid,workoutid){
         <?php if($is_trainee){ ?>
             $.ajax({
-                url : '<?php echo base_url(); ?>trainee_dashboard/ajax_update_set_view/'+setid+'/'+workoutid,
+                url : '<?php echo base_url()._INDEX; ?>trainee_dashboard/ajax_update_set_view/'+setid+'/'+workoutid,
                 success : function(res){
                     $('#dynamic-set-update-view').html(res);
                     $('.modal').modal();
@@ -162,7 +162,7 @@
             $.ajax({
                 type:'POST',
                 data : $('#setform').serialize(),
-                url:'<?php echo base_url() ?>trainee_dashboard/ajax_update_sets',
+                url:'<?php echo base_url()._INDEX ?>trainee_dashboard/ajax_update_sets',
                 success:function(res){
                     if(res == '1'){
                         alert('Successfully updated.');          
@@ -249,7 +249,7 @@
         $("#workout_id_for_graph").val(wid+"_"+date);
         create_bar_graph();
         $.ajax({
-            url : '<?php echo base_url() ?>trainee_dashboard/ajaxWorkoutDetails',
+            url : '<?php echo base_url()._INDEX ?>trainee_dashboard/ajaxWorkoutDetails',
             type : 'POST',
             data : {
                 workOutId : wid,
@@ -722,7 +722,7 @@
             return 0;
         }
         $.ajax({
-            url: '<?php echo base_url() ?>trainee_dashboard/create_bar_graph',
+            url: '<?php echo base_url()._INDEX ?>trainee_dashboard/create_bar_graph',
             type: 'POST',
             data: {
                 'workout_id' : wid,

@@ -2,7 +2,7 @@
               <h4>
                 Manage Sub-Groups
                 <span style="float: right;">
-                  <a class="btn btn-blue" href="<?php echo base_url() ?>sub_group/add/<?php echo $parent_slug ?>">
+                  <a class="btn btn-blue" href="<?php echo base_url()._INDEX ?>sub_group/add/<?php echo $parent_slug ?>">
                     Add new
                   </a>
                 </span>
@@ -23,11 +23,11 @@
                   
                   <td><?php echo $row->name; ?></td>
                   <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
-                  <td><a href="<?php echo base_url() ?>sub_group/alltrainee/<?php echo $row->id; ?>"><i class="glyphicon glyphicon-user"></i></a></td>
+                  <td><a href="<?php echo base_url()._INDEX ?>sub_group/alltrainee/<?php echo $row->id; ?>"><i class="glyphicon glyphicon-user"></i></a></td>
                   <td>
-                    <a href="<?php echo base_url() ?>sub_group/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <a href="<?php echo base_url()._INDEX ?>sub_group/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
                          &nbsp;&nbsp;&nbsp;  
-                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>sub_group/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
+                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>sub_group/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
                   </td>
                   
                 </tr>               

@@ -42,15 +42,15 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="<?php echo base_url() ?>trainee">Dashboard</a></li>
+            <li><a href="<?php echo base_url()._INDEX ?>trainee">Dashboard</a></li>
             <!-- 
-              <li><a href="<?php echo base_url() ?>plan/allplan">All Plans</a></li>
-              <li><a href="<?php echo base_url() ?>trainer/manageuser">Manage Users</a></li>
+              <li><a href="<?php echo base_url()._INDEX ?>plan/allplan">All Plans</a></li>
+              <li><a href="<?php echo base_url()._INDEX ?>trainer/manageuser">Manage Users</a></li>
             -->
-            <li><a href="<?php echo base_url(); ?>trainee/changePassword">Settings</a></li>
-            <li><a href="<?php echo base_url(); ?>profile/trainee">Profile</a></li>
-            <li><a href="<?php echo base_url(); ?>trainee/support">Support</a></li>
-            <li><a href="<?php echo base_url() ?>trainee/logout">Logout</a></li>
+            <li><a href="<?php echo base_url()._INDEX; ?>trainee/changePassword">Settings</a></li>
+            <li><a href="<?php echo base_url()._INDEX; ?>profile/trainee">Profile</a></li>
+            <li><a href="<?php echo base_url()._INDEX; ?>trainee/support">Support</a></li>
+            <li><a href="<?php echo base_url()._INDEX ?>trainee/logout">Logout</a></li>
           </ul>
         </div>
       </div>

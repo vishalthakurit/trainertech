@@ -3,7 +3,7 @@
               <h4>
                 Manage Workouts
                 <span style="float: right;">
-                  <a class="btn btn-blue" href="<?php echo base_url() ?>workout/add">
+                  <a class="btn btn-blue" href="<?php echo base_url()._INDEX ?>workout/add">
                     Add new
                   </a>
                 </span>
@@ -57,9 +57,9 @@
                                                      
                   <td><?php echo date('m/d/Y', strtotime($row->date)); ?></td>                                    
                   <td>
-                    <a href="<?php echo base_url() ?>workout/edit/<?php echo $row->id ?>"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <a href="<?php echo base_url()._INDEX ?>workout/edit/<?php echo $row->id ?>"><i class="glyphicon glyphicon-pencil"></i></a>
                          &nbsp;&nbsp;&nbsp;  
-                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>workout/delete/<?php echo $row->id ?>"><i class="glyphicon glyphicon-remove"></i></a>
+                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>workout/delete/<?php echo $row->id ?>"><i class="glyphicon glyphicon-remove"></i></a>
                   </td>
                   
                 </tr>               

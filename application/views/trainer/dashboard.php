@@ -101,7 +101,7 @@ function date_validation(from,to){
             <?php if ($trainee): ?> 
               <?php foreach($trainee as $row): ?>
                 <tr>
-                    <td><a href="<?php echo base_url() ?>trainer/view_trainee/<?php echo $row->slug; ?>" style="text-transform: capitalize;"><?php echo $row->lname.', '.$row->fname ?></a></td>
+                    <td><a href="<?php echo base_url()._INDEX ?>trainer/view_trainee/<?php echo $row->slug; ?>" style="text-transform: capitalize;"><?php echo $row->lname.', '.$row->fname ?></a></td>
                       <td>
                               <?php if ($row->groupid): ?>
                                    <?php if ($row->parent_id==0): ?>
