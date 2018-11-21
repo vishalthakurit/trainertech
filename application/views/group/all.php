@@ -30,7 +30,7 @@ $(document).ready(function(){
               <h4>
                 Manage Groups
                 <span style="float: right;">
-                  <a class="btn btn-blue" href="<?php echo base_url() ?>group/add">
+                  <a class="btn btn-blue" href="<?php echo base_url()._INDEX ?>group/add">
                     Add new
                   </a>
                 </span>
@@ -70,13 +70,13 @@ $(document).ready(function(){
                                 -
                         <?php endif;  ?>
                     </td>
-                   <td><a href="<?php echo base_url() ?>group/alltrainee/<?php echo $row->id; ?>"><i class="glyphicon glyphicon-user"></i></a></td>
+                   <td><a href="<?php echo base_url()._INDEX?>group/alltrainee/<?php echo $row->id; ?>"><i class="glyphicon glyphicon-user"></i></a></td>
                     
                     <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
                     <td>
-                      <a href="<?php echo base_url() ?>group/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
+                      <a href="<?php echo base_url()._INDEX ?>group/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
                            &nbsp;&nbsp;&nbsp;  
-                           <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>group/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
+                           <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>group/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
                     </td>
                     
                   </tr>               

@@ -97,7 +97,7 @@
                 <div class="row">
                     <?php if ($listing): foreach($listing as $property){ ?>
                     <div class="col-sm-4">
-                        <a href="<?php echo base_url() ?>listings/detail/<?php echo $property->slug ?>"><img src="<?php echo base_url() ?>assets/uploads/properties/<?php echo $property->featured_image; ?>" width='100%'></a>
+                        <a href="<?php echo base_url()._INDEX ?>listings/detail/<?php echo $property->slug ?>"><img src="<?php echo base_url() ?>assets/uploads/properties/<?php echo $property->featured_image; ?>" width='100%'></a>
                         <h4> <?php echo $property->title ?></h4>
                         <p><?php echo $property->excerpt ?></p>
                     </div>
@@ -118,7 +118,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                     </div> -->
                 </div>
-                <div class="text-center m-t-lg"><a href="<?php echo base_url() ?>listings" class="btn lern-more">VIEW ALL LISTINGS</a></div>
+                <div class="text-center m-t-lg"><a href="<?php echo base_url()._INDEX ?>listings" class="btn lern-more">VIEW ALL LISTINGS</a></div>
             </div>
         </section>
 

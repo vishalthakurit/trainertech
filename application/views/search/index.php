@@ -20,7 +20,7 @@
 				<?php if($results['count'] != 0){ ?>
 					<?php foreach($results['listings'] as $row){ ?>
 					<div class="row">
-						<a href="<?php echo base_url().'listings/detail/'.$row->slug ?>">
+						<a href="<?php echo base_url()._INDEX.'listings/detail/'.$row->slug ?>">
 						<div class="col-sm-9 ">
 							<h3> <?php echo $row->title ?> <!-- <span class="pull-right" style="font-size:14px"></span> --></h3>
 							<div class="small-bord" ></div>                        
@@ -173,7 +173,7 @@
 					var content = '';
 					$.each(listings, function(index, value){
 						content += '<div class="row">';
-						content += '<a href="<?php echo base_url()."listings/detail/" ?>'+value['slug']+'">';
+						content += '<a href="<?php echo base_url()._INDEX."listings/detail/" ?>'+value['slug']+'">';
 						content += '<div class="col-sm-9">';
 						content += '<h3>'+value['title']+'<!-- <span class="pull-right" style="font-size:14px"><?php echo base_url()."listings/detail/" ?>'+value['slug']+'</span> --> </h3>';
 						content += '<div class="small-bord" ></div>';                       

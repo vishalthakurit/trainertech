@@ -1,8 +1,8 @@
 <aside>
         <div class="left-nav">
             <ul>
-                <li><a href="<?php echo base_url() ?>manager"><i class="fa fa-dashboard"></i>Dashboard</a></li>
-                <li><a href="<?php echo base_url() ?>manager/manage_trainer"><i class="fa fa-users"></i>Manage Trainers</a></li>
+                <li><a href="<?php echo base_url()._INDEX ?>manager"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+                <li><a href="<?php echo base_url()._INDEX ?>manager/manage_trainer"><i class="fa fa-users"></i>Manage Trainers</a></li>
             </ul>
         </div>
 </aside>

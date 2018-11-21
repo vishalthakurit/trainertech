@@ -2,25 +2,25 @@
         <div class="left-nav">
             <ul>
                 <li>
-                    <a <?php if($this->uri->segment(1) == 'trainee_dashboard'){ echo 'class="active"'; } ?>  href="<?php echo base_url() ?>trainee">
+                    <a <?php if($this->uri->segment(1) == 'trainee_dashboard'){ echo 'class="active"'; } ?>  href="<?php echo base_url()._INDEX ?>trainee">
                         <img src='<?php echo base_url() ?>assets/images/dashboard.png' width='20' style='margin-right:10px;' >
                         Dashboard 
                     </a>
                 </li>   
                 <li>
-                    <a <?php if($this->uri->segment(1) == 'profile'){ echo 'class="active"'; } ?>  href="<?php echo base_url(); ?>profile/trainee">
+                    <a <?php if($this->uri->segment(1) == 'profile'){ echo 'class="active"'; } ?>  href="<?php echo base_url()._INDEX; ?>profile/trainee">
                         <img src='<?php echo base_url() ?>assets/images/profile.png' width='20' style='margin-right:10px;' >
                         Profile
                     </a>
                 </li>   
                 <li>
-                    <a <?php if($this->uri->segment(1) == 'progress'){ echo 'class="active"'; } ?>  href="<?php echo base_url(); ?>progress">
+                    <a <?php if($this->uri->segment(1) == 'progress'){ echo 'class="active"'; } ?>  href="<?php echo base_url()._INDEX; ?>progress">
                         <img src='<?php echo base_url() ?>assets/images/progress.png' width='20' style='margin-right:10px;' >
                         Progress
                     </a>
                 </li>   
                 <li>
-                    <a <?php if($this->uri->segment(1).'/'.$this->uri->segment(2) == 'trainee/support'){ echo 'class="active"'; } ?>  href="<?php echo base_url() ?>trainee/support">
+                    <a <?php if($this->uri->segment(1).'/'.$this->uri->segment(2) == 'trainee/support'){ echo 'class="active"'; } ?>  href="<?php echo base_url()._INDEX ?>trainee/support">
                         <img src='<?php echo base_url() ?>assets/images/globe.png' width='20' style='margin-right:10px;' >
                         Support
                     </a>

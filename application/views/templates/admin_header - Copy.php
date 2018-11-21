@@ -42,10 +42,10 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="<?php echo base_url() ?>admin">Dashboard</a></li>
-            <li><a href="<?php echo base_url(); ?>settings/changePassword">Settings</a></li>
-            <li><a href="<?php echo base_url(); ?>profile/admin">Profile</a></li>
-            <li><a href="<?php echo base_url() ?>admin/logout">Logout</a></li>
+            <li><a href="<?php echo base_url()._INDEX ?>admin">Dashboard</a></li>
+            <li><a href="<?php echo base_url()._INDEX; ?>settings/changePassword">Settings</a></li>
+            <li><a href="<?php echo base_url()._INDEX; ?>profile/admin">Profile</a></li>
+            <li><a href="<?php echo base_url()._INDEX ?>admin/logout">Logout</a></li>
           </ul>
         </div>
       </div>

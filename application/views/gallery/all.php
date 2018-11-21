@@ -3,7 +3,7 @@
         <header>
           <span>Gallery Images</span>
           <form role="form">            
-              <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url() ?>gallery/add">
+              <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url()._INDEX  ?>gallery/add">
                     Add new
                   </a>
           </form>
@@ -24,7 +24,7 @@
                   <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
                 <td>                    
                     &nbsp;&nbsp;&nbsp;  
-                    <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>gallery/delete/<?php echo $row->id ?>"><i class="glyphicon glyphicon-remove"></i></a>
+                    <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX  ?>gallery/delete/<?php echo $row->id ?>"><i class="glyphicon glyphicon-remove"></i></a>
                   </td>
                   
                 </tr>               

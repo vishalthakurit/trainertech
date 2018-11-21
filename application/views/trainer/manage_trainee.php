@@ -5,7 +5,7 @@
             <h4>
               Manage Trainees
               <span style="float: right;">
-                <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url() ?>trainer/add_trainee">
+                <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url()._INDEX ?>trainer/add_trainee">
                   Add new
                 </a>
               </span>
@@ -50,14 +50,14 @@
               <tbody>
                 <?php if ($trainee): foreach ($trainee as $row) { ?>
                
-                  <td><a href="<?php echo base_url() ?>trainer/view_trainee/<?php echo $row->slug; ?>" style="text-transform: capitalize;"><?php echo $row->lname.', '.$row->fname ?></a></td>
+                  <td><a href="<?php echo base_url()._INDEX ?>trainer/view_trainee/<?php echo $row->slug; ?>" style="text-transform: capitalize;"><?php echo $row->lname.', '.$row->fname ?></a></td>
                   <td><a href="mailto:<?php echo $row->email ?>"><?php echo $row->email ?></a></td>
                                                      
                   <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
                   <td>
-                    <a href="<?php echo base_url() ?>trainer/edit_trainee/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <a href="<?php echo base_url()._INDEX ?>trainer/edit_trainee/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
                          &nbsp;&nbsp;&nbsp;  
-                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>trainer/delete_trainee/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
+                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>trainer/delete_trainee/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
                   </td>
                   
                 </tr>               

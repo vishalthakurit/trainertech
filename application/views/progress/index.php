@@ -93,7 +93,7 @@ function create_bar_graph(){
 	var from = $('[name=barfrom]').val().replace('/','-').replace('/','-');
 	var to = $('[name=barto]').val().replace('/','-').replace('/','-');
   	date_validation(from,to);
-  	$("#iframe-bar-graph").attr('src', '<?php echo base_url() ?>progress/create_bar_graph/'+timeline+'/'+reps+'/'+from+'/'+to);
+  	$("#iframe-bar-graph").attr('src', '<?php echo base_url()._INDEX ?>progress/create_bar_graph/'+timeline+'/'+reps+'/'+from+'/'+to);
 }
 </script>
 

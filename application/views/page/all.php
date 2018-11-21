@@ -3,7 +3,7 @@
         <header>
           <span>Pages</span>
           <form role="form">            
-              <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url() ?>page/add">
+              <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url()._INDEX ?>page/add">
                     Add new
                   </a>
           </form>
@@ -25,9 +25,9 @@
                   <td><?php echo word_limiter($row->description,5); ?></td>                                    
                   <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
                   <td>
-                    <a href="<?php echo base_url() ?>page/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <a href="<?php echo base_url()._INDEX ?>page/edit/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
                          &nbsp;&nbsp;&nbsp;  
-                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>page/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
+                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>page/delete/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
                   </td>
                   
                 </tr>               

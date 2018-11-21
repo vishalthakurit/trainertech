@@ -3,7 +3,7 @@
             <h4>
               Manage Trainers
               <span style="float: right;">
-                <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url() ?>manager/add_trainer">
+                <a class="btn btn-blue" style="margin:-5px;" href="<?php echo base_url()._INDEX ?>manager/add_trainer">
                   Add new
                 </a>
               </span>
@@ -25,9 +25,9 @@
                                                      
                   <td><?php echo date('m/d/Y', strtotime($row->created)); ?></td>                                    
                   <td>
-                    <a href="<?php echo base_url() ?>manager/edit_trainer/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <a href="<?php echo base_url()._INDEX ?>manager/edit_trainer/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-pencil"></i></a>
                          &nbsp;&nbsp;&nbsp;  
-                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url() ?>manager/delete_trainer/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
+                         <a onclick="return confirm('Are you sure?')" href="<?php echo base_url()._INDEX ?>manager/delete_trainer/<?php echo $row->slug ?>"><i class="glyphicon glyphicon-remove"></i></a>
                   </td>
                   
                 </tr>               

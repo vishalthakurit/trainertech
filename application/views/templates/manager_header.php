@@ -123,9 +123,9 @@
                 <a href="#menu" class="menu"></a>
 
                 <ul class="header-menu">
-                    <li><a href="<?php echo base_url(); ?>manager/changePassword"><i class="fa fa-cog"></i>Change Password</a></li>
-                    <li><a href="<?php echo base_url(); ?>profile/manager"><i class="fa fa-user"></i>Profile</a></li>
-                    <li><a href="<?php echo base_url() ?>manager/logout"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                    <li><a href="<?php echo base_url()._INDEX; ?>manager/changePassword"><i class="fa fa-cog"></i>Change Password</a></li>
+                    <li><a href="<?php echo base_url()._INDEX; ?>profile/manager"><i class="fa fa-user"></i>Profile</a></li>
+                    <li><a href="<?php echo base_url()._INDEX ?>manager/logout"><i class="fa fa-sign-out"></i>Sign Out</a></li>
                 </ul>
 
             </header>

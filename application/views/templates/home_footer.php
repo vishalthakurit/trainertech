@@ -12,9 +12,9 @@
 						<h4>ABOUT & LEGAL</h4>
 						<div class="divider"></div>
 						<ul>                            
-							<li><a href="<?php echo base_url() ?>about"><span>&#10003</span> About Us</a></li>
+							<li><a href="<?php echo base_url()._INDEX ?>about"><span>&#10003</span> About Us</a></li>
 							<?php $pages = getallpages(); if($pages): foreach($pages as $page): ?>
-								<li><a href="<?php echo base_url().'page/'.$page->slug; ?>"><span>&#10003</span> <?php echo $page->title; ?></a></li>
+								<li><a href="<?php echo base_url()._INDEX.'page/'.$page->slug; ?>"><span>&#10003</span> <?php echo $page->title; ?></a></li>
 							<?php endforeach; endif; ?>
 						</ul>
 					</div>
