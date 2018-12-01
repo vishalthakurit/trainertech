@@ -8,6 +8,7 @@ class Admin extends CI_Controller {
 	}
 
 	public function index(){
+		
 		if(admin_login_in()===FALSE)
 			redirect(_INDEX.'login');
 		$data['template'] = 'admin/dashboard';

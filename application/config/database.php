@@ -50,21 +50,21 @@ $active_record = TRUE;
 
 
 // local
-// $db['default']['hostname'] = '127.0.0.1';
-// $db['default']['username'] = 'trainertech';
-// $db['default']['password'] = 'pass';
-// $db['default']['database'] = 'trainertech';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
+$db['default']['database'] = 'trainertech';
 
 // server
-$db['default']['hostname'] = 'us-cdbr-iron-east-01.cleardb.net';
-$db['default']['username'] = 'bb44b8874b59b0';
-$db['default']['password'] = 'e99e25d5';
-$db['default']['database'] = 'heroku_3e0e290e96089f7';
+// $db['default']['hostname'] = 'us-cdbr-iron-east-01.cleardb.net';
+// $db['default']['username'] = 'bb44b8874b59b0';
+// $db['default']['password'] = 'e99e25d5';
+// $db['default']['database'] = 'heroku_3e0e290e96089f7';
 
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
+$db['default']['pconnect'] = FALSE;
+$db['default']['db_debug'] = (ENVIRONMENT !== 'production');
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
 $db['default']['char_set'] = 'utf8';

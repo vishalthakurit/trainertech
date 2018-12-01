@@ -38,7 +38,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 
 define('PROJECT_NAME',		'TrainerTech');
-define('_INDEX', '');
+define('_INDEX', 'index.php/');
 
 define('BUCKET','trainertechapp');
 define('BUCKET_PATH','https://s3.amazonaws.com/'.BUCKET.'/');

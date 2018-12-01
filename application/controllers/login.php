@@ -20,6 +20,7 @@ class Login extends CI_Controller {
 			$status = $this->turnskey_model->login($this->input->post('email'),$this->input->post('password'),1);	
 			
 			if($status){
+				// echo "SDFSD";die;
 				redirect(_INDEX.'admin');
 			}
 			else{
